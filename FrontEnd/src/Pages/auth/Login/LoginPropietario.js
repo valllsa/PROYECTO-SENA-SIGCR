@@ -1,50 +1,42 @@
-import { useState, useEffect } from "react";
-import axios from "axios"
+import { useState } from "react";
+import axios from "axios";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Logins.css";
 import myImg from "../../../img/logo2.png";
-import { NavBar } from "../../../Components/Componentes_Propietario/navBar";
+import { useUser } from '../../../UserContext';
 
 const LoginPropietario = () => {
-  const [formData, setFormData] = useState({
-    User: '',
-    Pass: ''
-  });
-
-  const navigate = useNavigate(); 
+  const [Username, setUsername] = useState(''); 
+  const [Password, setPassword] = useState(''); 
+  const { setUser: setContextUser } = useUser(); 
+  const navigate = useNavigate();
 
   const enviar = async (e) => {
     e.preventDefault();
-
-  try {
-    // solicitud GET para obtener los datos del usuario
-    const response = await axios.get(`http://localhost:4000/Propietarios?User=${formData.User}`);
     
-    if (response.data.length > 0) {
-      const usuario = response.data[0];
+    try {
+      // Solicitud GET para obtener los datos del usuario
+      const response = await axios.get(`http://localhost:4000/Propietarios?Username=${Username}`);
+      
+      if (response.data.length > 0) {
+        const usuario = response.data[0];
 
-      if (usuario.Pass === formData.Pass) {
-        alert("Éxito al iniciar sesión");
-         navigate('/MainPropietario')
+        if (usuario.Password === Password) {
+          alert("Éxito al iniciar sesión");
+          setContextUser(usuario); // Actualizar el contexto con el usuario
+          navigate('/MainPropietario');
+        } else {
+          alert("Contraseña incorrecta");
+        }
       } else {
-        alert("Contraseña incorrecta");
+        alert("Usuario no encontrado");
       }
-    } else {
-      alert("Usuario no encontrado");
+    } catch (error) {
+      console.error(error);
+      alert("Ocurrió un error al intentar iniciar sesión");
     }
-  } catch (error) {
-    console.error(error);
-    alert("Ocurrió un error al intentar iniciar sesión");
-  }
-};
-
-const handleChange = (e) => {
-  setFormData({
-    ...formData,
-    [e.target.name]: e.target.value
-  });
-};
+  };
 
   return (
     <div className="login-page">
@@ -62,10 +54,10 @@ const handleChange = (e) => {
                   type="text"
                   className="form-control"
                   placeholder="Usuario"
-                  name="User"
+                  name="Username"
                   required
-                  value={formData.User}
-                  onChange={handleChange}
+                  value={Username}
+                  onChange={(e) => setUsername(e.target.value)}
                 />
                 <div className="input-group-append">
                   <div className="input-group-text">
@@ -80,8 +72,8 @@ const handleChange = (e) => {
                   placeholder="Contraseña"
                   name="Pass"
                   required
-                  value={formData.Pass}
-                  onChange={handleChange}
+                  value={Password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
                 <div className="input-group-append">
                   <div className="input-group-text">

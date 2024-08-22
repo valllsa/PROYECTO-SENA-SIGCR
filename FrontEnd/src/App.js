@@ -9,6 +9,7 @@ import MainPropietario from "./Pages/auth/propietario/mainPropietario";
 import MainPortero from "./Pages/auth/portero/mainPortero.";
 import RegisterPropietario from "./Pages/auth/Login/RegisterPropietario";
 import InsertForm from "./Pages/auth/admin/insertForm";
+import Profile from "./Pages/auth/propietario/profile"
 function App() {
   return (
     <Fragment>
@@ -56,6 +57,9 @@ function App() {
             exact
             element={<MainPropietario />}
           ></Route>
+          <Route path="/profile" 
+            exact
+            element={<Profile />} />
           <Route path="InsertForm" exact element={<InsertForm />}></Route>
         </Routes>
       </Router>

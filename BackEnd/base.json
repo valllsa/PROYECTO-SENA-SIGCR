@@ -1,0 +1,1475 @@
+{ "Users_Admin": [
+    {
+      "Usuario": "Valery sarith",
+      "Contrasena": "12345",
+      "id": "2008"
+    }
+  ],
+  "Users_Portero": [
+    {
+      "Usuario": "Luisa Martinez",
+      "Contrasena": "987",
+      "id": "1314"
+    }
+  ],
+  "Apartamentos": [
+    {
+      "CodigoVivienda": 1101,
+      "NumeroParqueadero": 1,
+      "id": "ba2a"
+    },
+    {
+      "CodigoVivienda": 1102,
+      "NumeroParqueadero": 2,
+      "id": "c3b5"
+    },
+    {
+      "CodigoVivienda": 1103,
+      "NumeroParqueadero": 3,
+      "id": "d4c8"
+    },
+    {
+      "CodigoVivienda": 1104,
+      "NumeroParqueadero": 4,
+      "id": "e5d9"
+    },
+    {
+      "CodigoVivienda": 1105,
+      "NumeroParqueadero": 5,
+      "id": "f6ea"
+    },
+    {
+      "CodigoVivienda": 1106,
+      "NumeroParqueadero": 6,
+      "id": "g7fb"
+    },
+    {
+      "CodigoVivienda": 1107,
+      "NumeroParqueadero": 7,
+      "id": "h8gc"
+    },
+    {
+      "CodigoVivienda": 1108,
+      "NumeroParqueadero": 8,
+      "id": "i9hd"
+    },
+    {
+      "CodigoVivienda": 1109,
+      "NumeroParqueadero": 9,
+      "id": "j0ie"
+    },
+    {
+      "CodigoVivienda": 1110,
+      "NumeroParqueadero": 10,
+      "id": "k1jf"
+    },
+    {
+      "CodigoVivienda": 1111,
+      "NumeroParqueadero": 11,
+      "id": "l2kg"
+    },
+    {
+      "CodigoVivienda": 1112,
+      "NumeroParqueadero": 12,
+      "id": "m3lh"
+    },
+    {
+      "CodigoVivienda": 1113,
+      "NumeroParqueadero": 13,
+      "id": "n4mi"
+    },
+    {
+      "CodigoVivienda": 1114,
+      "NumeroParqueadero": 14,
+      "id": "o5nj"
+    },
+    {
+      "CodigoVivienda": 1115,
+      "NumeroParqueadero": 15,
+      "id": "p6ok"
+    },
+    {
+      "CodigoVivienda": 1116,
+      "NumeroParqueadero": 16,
+      "id": "q7pl"
+    },
+    {
+      "CodigoVivienda": 1117,
+      "NumeroParqueadero": 17,
+      "id": "r8qm"
+    },
+    {
+      "CodigoVivienda": 1118,
+      "NumeroParqueadero": 18,
+      "id": "s9rn"
+    },
+    {
+      "CodigoVivienda": 1119,
+      "NumeroParqueadero": 19,
+      "id": "t0so"
+    },
+    {
+      "CodigoVivienda": 1120,
+      "NumeroParqueadero": 20,
+      "id": "u1tp"
+    },
+    {
+      "CodigoVivienda": 1121,
+      "NumeroParqueadero": 21,
+      "id": "v2uq"
+    },
+    {
+      "CodigoVivienda": 1122,
+      "NumeroParqueadero": 22,
+      "id": "w3vr"
+    },
+    {
+      "CodigoVivienda": 1123,
+      "NumeroParqueadero": 23,
+      "id": "x4ws"
+    },
+    {
+      "CodigoVivienda": 1124,
+      "NumeroParqueadero": 24,
+      "id": "y5xt"
+    },
+    {
+      "CodigoVivienda": 1125,
+      "NumeroParqueadero": 25,
+      "id": "z6yu"
+    },
+    {
+      "CodigoVivienda": 1126,
+      "NumeroParqueadero": 26,
+      "id": "a7zv"
+    },
+    {
+      "CodigoVivienda": 1127,
+      "NumeroParqueadero": 27,
+      "id": "b8aw"
+    },
+    {
+      "CodigoVivienda": 1128,
+      "NumeroParqueadero": 28,
+      "id": "c9bx"
+    },
+    {
+      "CodigoVivienda": 1129,
+      "NumeroParqueadero": 29,
+      "id": "d0cy"
+    },
+    {
+      "CodigoVivienda": 1130,
+      "NumeroParqueadero": 30,
+      "id": "e1dz"
+    }
+  ],
+  "Propietarios":[
+    {
+      "CodigoVivienda": 1101,
+      "Nombre": "Denys Fontecha",
+      "Teléfono": 325654785,
+      "Correo": "denys@gmail.com",
+      "NumeroDocumento": 1548952136,
+      "MesesAtrasados": 2,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1102,
+      "Nombre": "Marta López",
+      "Teléfono": 321654987,
+      "Correo": "marta.lopez@gmail.com",
+      "NumeroDocumento": 1548952137,
+      "MesesAtrasados": 1,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1103,
+      "Nombre": "Carlos Pérez",
+      "Teléfono": 312789456,
+      "Correo": "carlos.perez@hotmail.com",
+      "NumeroDocumento": 1548952138,
+      "MesesAtrasados": 0,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1104,
+      "Nombre": "Ana García",
+      "Teléfono": 310123456,
+      "Correo": "ana.garcia@yahoo.com",
+      "NumeroDocumento": 1548952139,
+      "MesesAtrasados": 3,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1105,
+      "Nombre": "Luis Martínez",
+      "Teléfono": 320987654,
+      "Correo": "luis.martinez@gmail.com",
+      "NumeroDocumento": 1548952140,
+      "MesesAtrasados": 1,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1106,
+      "Nombre": "Elena Rodríguez",
+      "Teléfono": 315654321,
+      "Correo": "elena.rodriguez@gmail.com",
+      "NumeroDocumento": 1548952141,
+      "MesesAtrasados": 0,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1107,
+      "Nombre": "Miguel Hernández",
+      "Teléfono": 318654987,
+      "Correo": "miguel.hernandez@gmail.com",
+      "NumeroDocumento": 1548952142,
+      "MesesAtrasados": 4,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1108,
+      "Nombre": "Laura Jiménez",
+      "Teléfono": 317789456,
+      "Correo": "laura.jimenez@hotmail.com",
+      "NumeroDocumento": 1548952143,
+      "MesesAtrasados": 2,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1109,
+      "Nombre": "Jorge Ramírez",
+      "Teléfono": 316123789,
+      "Correo": "jorge.ramirez@yahoo.com",
+      "NumeroDocumento": 1548952144,
+      "MesesAtrasados": 0,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1110,
+      "Nombre": "Sara Sánchez",
+      "Teléfono": 314654123,
+      "Correo": "sara.sanchez@gmail.com",
+      "NumeroDocumento": 1548952145,
+      "MesesAtrasados": 1,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1111,
+      "Nombre": "David Moreno",
+      "Teléfono": 311789654,
+      "Correo": "david.moreno@hotmail.com",
+      "NumeroDocumento": 1548952146,
+      "MesesAtrasados": 3,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1112,
+      "Nombre": "Claudia Rojas",
+      "Teléfono": 319123987,
+      "Correo": "claudia.rojas@gmail.com",
+      "NumeroDocumento": 1548952147,
+      "MesesAtrasados": 0,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1113,
+      "Nombre": "Pedro Castillo",
+      "Teléfono": 322654321,
+      "Correo": "pedro.castillo@gmail.com",
+      "NumeroDocumento": 1548952148,
+      "MesesAtrasados": 1,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1114,
+      "Nombre": "Sofía Torres",
+      "Teléfono": 326789456,
+      "Correo": "sofia.torres@hotmail.com",
+      "NumeroDocumento": 1548952149,
+      "MesesAtrasados": 2,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1115,
+      "Nombre": "Ricardo Gómez",
+      "Teléfono": 324123789,
+      "Correo": "ricardo.gomez@yahoo.com",
+      "NumeroDocumento": 1548952150,
+      "MesesAtrasados": 4,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1116,
+      "Nombre": "Patricia Díaz",
+      "Teléfono": 329654123,
+      "Correo": "patricia.diaz@gmail.com",
+      "NumeroDocumento": 1548952151,
+      "MesesAtrasados": 0,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1117,
+      "Nombre": "Alejandro Ruiz",
+      "Teléfono": 323789654,
+      "Correo": "alejandro.ruiz@hotmail.com",
+      "NumeroDocumento": 1548952152,
+      "MesesAtrasados": 3,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1118,
+      "Nombre": "Valeria Medina",
+      "Teléfono": 327123987,
+      "Correo": "valeria.medina@yahoo.com",
+      "NumeroDocumento": 1548952153,
+      "MesesAtrasados": 1,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1119,
+      "Nombre": "Enrique Vega",
+      "Teléfono": 330654321,
+      "Correo": "enrique.vega@gmail.com",
+      "NumeroDocumento": 1548952154,
+      "MesesAtrasados": 2,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1120,
+      "Nombre": "María Flores",
+      "Teléfono": 328789456,
+      "Correo": "maria.flores@hotmail.com",
+      "NumeroDocumento": 1548952155,
+      "MesesAtrasados": 0,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1121,
+      "Nombre": "Andrés Ortiz",
+      "Teléfono": 331123789,
+      "Correo": "andres.ortiz@yahoo.com",
+      "NumeroDocumento": 1548952156,
+      "MesesAtrasados": 3,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1122,
+      "Nombre": "Gabriela Silva",
+      "Teléfono": 332654123,
+      "Correo": "gabriela.silva@gmail.com",
+      "NumeroDocumento": 1548952157,
+      "MesesAtrasados": 1,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1123,
+      "Nombre": "Fernando Peña",
+      "Teléfono": 333789654,
+      "Correo": "fernando.pena@hotmail.com",
+      "NumeroDocumento": 1548952158,
+      "MesesAtrasados": 4,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1124,
+      "Nombre": "Isabel Vargas",
+      "Teléfono": 334123987,
+      "Correo": "isabel.vargas@yahoo.com",
+      "NumeroDocumento": 1548952159,
+      "MesesAtrasados": 0,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1125,
+      "Nombre": "Tomás Mendoza",
+      "Teléfono": 335654321,
+      "Correo": "tomas.mendoza@gmail.com",
+      "NumeroDocumento": 1548952160,
+      "MesesAtrasados": 2,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1126,
+      "Nombre": "Lucía Morales",
+      "Teléfono": 336789456,
+      "Correo": "lucia.morales@hotmail.com",
+      "NumeroDocumento": 1548952161,
+      "MesesAtrasados": 1,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1127,
+      "Nombre": "Juan Ramírez",
+      "Teléfono": 337123789,
+      "Correo": "juan.ramirez@yahoo.com",
+      "NumeroDocumento": 1548952162,
+      "MesesAtrasados": 3,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1128,
+      "Nombre": "Natalia Castro",
+      "Teléfono": 338654123,
+      "Correo": "natalia.castro@gmail.com",
+      "NumeroDocumento": 1548952163,
+      "MesesAtrasados": 0,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1129,
+      "Nombre": "Rafael Reyes",
+      "Teléfono": 339789654,
+      "Correo": "rafael.reyes@hotmail.com",
+      "NumeroDocumento": 1548952164,
+      "MesesAtrasados": 4,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    },
+    {
+      "CodigoVivienda": 1130,
+      "Nombre": "Inés Guzmán",
+      "Teléfono": 340123987,
+      "Correo": "ines.guzman@yahoo.com",
+      "NumeroDocumento": 1548952165,
+      "MesesAtrasados": 1,
+      "EspacioParqueadero": 0,
+      "User": "generic1",
+      "Pass": "passG1"
+    }
+  ],
+  "Parqueadero":[
+    {
+      "NumeroEspacio": 1,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 2,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 3,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 4,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 5,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 6,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 7,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 8,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 9,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 10,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 11,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 12,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 13,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 14,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 15,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 16,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 17,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 18,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 19,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 20,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 21,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 22,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 23,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 24,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 25,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 26,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 27,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 28,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    },
+    {
+      "NumeroEspacio": 29,
+      "TipoEspacio": "Moto",
+      "Estado": "Disponible"
+    },
+    {
+      "NumeroEspacio": 30,
+      "TipoEspacio": "Carro",
+      "Estado": "Ocupado"
+    }
+  ],
+  "Invitados":[
+    {
+      "Nombre": "Mateo Martinez",
+      "NumeroDocumento": 1548952136,
+      "Teléfono": 325654785,
+      "Correo": "mateo.martinez@gmail.com",
+      "NumeroParqueadero": 1,
+      "Costo": 30000,
+      "CodigoVivienda": 1101
+    },
+    {
+      "Nombre": "Ana Pérez",
+      "NumeroDocumento": 1548952137,
+      "Teléfono": 326543876,
+      "Correo": "ana.perez@gmail.com",
+      "NumeroParqueadero": 2,
+      "Costo": 30000,
+      "CodigoVivienda": 1102
+    },
+    {
+      "Nombre": "Luis Gómez",
+      "NumeroDocumento": 1548952138,
+      "Teléfono": 327654987,
+      "Correo": "luis.gomez@gmail.com",
+      "NumeroParqueadero": 3,
+      "Costo": 30000,
+      "CodigoVivienda": 1103
+    },
+    {
+      "Nombre": "Sofía Rodríguez",
+      "NumeroDocumento": 1548952139,
+      "Teléfono": 328765432,
+      "Correo": "sofia.rodriguez@gmail.com",
+      "NumeroParqueadero": 4,
+      "Costo": 30000,
+      "CodigoVivienda": 1104
+    },
+    {
+      "Nombre": "Carlos Martínez",
+      "NumeroDocumento": 1548952140,
+      "Teléfono": 329876543,
+      "Correo": "carlos.martinez@gmail.com",
+      "NumeroParqueadero": 5,
+      "Costo": 30000,
+      "CodigoVivienda": 1105
+    },
+    {
+      "Nombre": "Laura Fernández",
+      "NumeroDocumento": 1548952141,
+      "Teléfono": 321987654,
+      "Correo": "laura.fernandez@gmail.com",
+      "NumeroParqueadero": 6,
+      "Costo": 30000,
+      "CodigoVivienda": 1106
+    },
+    {
+      "Nombre": "Pedro Jiménez",
+      "NumeroDocumento": 1548952142,
+      "Teléfono": 322876543,
+      "Correo": "pedro.jimenez@gmail.com",
+      "NumeroParqueadero": 7,
+      "Costo": 30000,
+      "CodigoVivienda": 1107
+    },
+    {
+      "Nombre": "Claudia Moreno",
+      "NumeroDocumento": 1548952143,
+      "Teléfono": 323765432,
+      "Correo": "claudia.moreno@gmail.com",
+      "NumeroParqueadero": 8,
+      "Costo": 30000,
+      "CodigoVivienda": 1108
+    },
+    {
+      "Nombre": "Miguel Ángel",
+      "NumeroDocumento": 1548952144,
+      "Teléfono": 324654321,
+      "Correo": "miguel.angel@gmail.com",
+      "NumeroParqueadero": 9,
+      "Costo": 30000,
+      "CodigoVivienda": 1109
+    },
+    {
+      "Nombre": "Natalia Torres",
+      "NumeroDocumento": 1548952145,
+      "Teléfono": 325543210,
+      "Correo": "natalia.torres@gmail.com",
+      "NumeroParqueadero": 10,
+      "Costo": 30000,
+      "CodigoVivienda": 1110
+    },
+    {
+      "Nombre": "Andrés Vega",
+      "NumeroDocumento": 1548952146,
+      "Teléfono": 326432109,
+      "Correo": "andres.vega@gmail.com",
+      "NumeroParqueadero": 11,
+      "Costo": 30000,
+      "CodigoVivienda": 1111
+    },
+    {
+      "Nombre": "Gabriela Guzmán",
+      "NumeroDocumento": 1548952147,
+      "Teléfono": 327321098,
+      "Correo": "gabriela.guzman@gmail.com",
+      "NumeroParqueadero": 12,
+      "Costo": 30000,
+      "CodigoVivienda": 1112
+    },
+    {
+      "Nombre": "Ricardo Morales",
+      "NumeroDocumento": 1548952148,
+      "Teléfono": 328210987,
+      "Correo": "ricardo.morales@gmail.com",
+      "NumeroParqueadero": 13,
+      "Costo": 30000,
+      "CodigoVivienda": 1113
+    },
+    {
+      "Nombre": "Valeria López",
+      "NumeroDocumento": 1548952149,
+      "Teléfono": 329109876,
+      "Correo": "valeria.lopez@gmail.com",
+      "NumeroParqueadero": 14,
+      "Costo": 30000,
+      "CodigoVivienda": 1114
+    },
+    {
+      "Nombre": "Fernando Castro",
+      "NumeroDocumento": 1548952150,
+      "Teléfono": 321098765,
+      "Correo": "fernando.castro@gmail.com",
+      "NumeroParqueadero": 15,
+      "Costo": 30000,
+      "CodigoVivienda": 1115
+    },
+    {
+      "Nombre": "Isabel Ruiz",
+      "NumeroDocumento": 1548952151,
+      "Teléfono": 322987654,
+      "Correo": "isabel.ruiz@gmail.com",
+      "NumeroParqueadero": 16,
+      "Costo": 30000,
+      "CodigoVivienda": 1116
+    },
+    {
+      "Nombre": "Tomás Fernández",
+      "NumeroDocumento": 1548952152,
+      "Teléfono": 323876543,
+      "Correo": "tomas.fernandez@gmail.com",
+      "NumeroParqueadero": 17,
+      "Costo": 30000,
+      "CodigoVivienda": 1117
+    },
+    {
+      "Nombre": "Lucía Ramírez",
+      "NumeroDocumento": 1548952153,
+      "Teléfono": 324765432,
+      "Correo": "lucia.ramirez@gmail.com",
+      "NumeroParqueadero": 18,
+      "Costo": 30000,
+      "CodigoVivienda": 1118
+    },
+    {
+      "Nombre": "Juan Rodríguez",
+      "NumeroDocumento": 1548952154,
+      "Teléfono": 325654321,
+      "Correo": "juan.rodriguez@gmail.com",
+      "NumeroParqueadero": 19,
+      "Costo": 30000,
+      "CodigoVivienda": 1119
+    },
+    {
+      "Nombre": "María Jiménez",
+      "NumeroDocumento": 1548952155,
+      "Teléfono": 326543210,
+      "Correo": "maria.jimenez@gmail.com",
+      "NumeroParqueadero": 20,
+      "Costo": 30000,
+      "CodigoVivienda": 1120
+    },
+    {
+      "Nombre": "Andrés Martínez",
+      "NumeroDocumento": 1548952156,
+      "Teléfono": 327432109,
+      "Correo": "andres.martinez@gmail.com",
+      "NumeroParqueadero": 21,
+      "Costo": 30000,
+      "CodigoVivienda": 1121
+    },
+    {
+      "Nombre": "Gabriela Moreno",
+      "NumeroDocumento": 1548952157,
+      "Teléfono": 328321098,
+      "Correo": "gabriela.moreno@gmail.com",
+      "NumeroParqueadero": 22,
+      "Costo": 30000,
+      "CodigoVivienda": 1122
+    },
+    {
+      "Nombre": "Ricardo Torres",
+      "NumeroDocumento": 1548952158,
+      "Teléfono": 329210987,
+      "Correo": "ricardo.torres@gmail.com",
+      "NumeroParqueadero": 23,
+      "Costo": 30000,
+      "CodigoVivienda": 1123
+    },
+    {
+      "Nombre": "Valeria López",
+      "NumeroDocumento": 1548952159,
+      "Teléfono": 321109876,
+      "Correo": "valeria.lopez@gmail.com",
+      "NumeroParqueadero": 24,
+      "Costo": 30000,
+      "CodigoVivienda": 1124
+    },
+    {
+      "Nombre": "Fernando Díaz",
+      "NumeroDocumento": 1548952160,
+      "Teléfono": 322098765,
+      "Correo": "fernando.diaz@gmail.com",
+      "NumeroParqueadero": 25,
+      "Costo": 30000,
+      "CodigoVivienda": 1125
+    },
+    {
+      "Nombre": "Isabel González",
+      "NumeroDocumento": 1548952161,
+      "Teléfono": 323987654,
+      "Correo": "isabel.gonzalez@gmail.com",
+      "NumeroParqueadero": 26,
+      "Costo": 30000,
+      "CodigoVivienda": 1126
+    },
+    {
+      "Nombre": "Tomás Hernández",
+      "NumeroDocumento": 1548952162,
+      "Teléfono": 324876543,
+      "Correo": "tomas.hernandez@gmail.com",
+      "NumeroParqueadero": 27,
+      "Costo": 30000,
+      "CodigoVivienda": 1127
+    },
+    {
+      "Nombre": "Lucía Fernández",
+      "NumeroDocumento": 1548952163,
+      "Teléfono": 325765432,
+      "Correo": "lucia.fernandez@gmail.com",
+      "NumeroParqueadero": 28,
+      "Costo": 30000,
+      "CodigoVivienda": 1128
+    },
+    {
+      "Nombre": "Juan Gómez",
+      "NumeroDocumento": 1548952164,
+      "Teléfono": 326654321,
+      "Correo": "juan.gomez@gmail.com",
+      "NumeroParqueadero": 29,
+      "Costo": 30000,
+      "CodigoVivienda": 1129
+    },
+    {
+      "Nombre": "María Martínez",
+      "NumeroDocumento": 1548952165,
+      "Teléfono": 327543210,
+      "Correo": "maria.martinez@gmail.com",
+      "NumeroParqueadero": 30,
+      "Costo": 30000,
+      "CodigoVivienda": 1130
+    }
+  ],
+  "SalonComunal":[
+    {
+      "NumeroCita": 1,
+      "NombreSolicitante": "Fabio Gallon",
+      "NumeroDocumento": 6315616512,
+      "Teléfono": 1589753698,
+      "Fecha": "2024-12-31",
+      "ValorAlquiler": 300000
+    },
+    {
+      "NumeroCita": 2,
+      "NombreSolicitante": "Laura Martínez",
+      "NumeroDocumento": 6315616513,
+      "Teléfono": 1589753699,
+      "Fecha": "2024-12-30",
+      "ValorAlquiler": 320000
+    },
+    {
+      "NumeroCita": 3,
+      "NombreSolicitante": "Carlos López",
+      "NumeroDocumento": 6315616514,
+      "Teléfono": 1589753700,
+      "Fecha": "2024-12-29",
+      "ValorAlquiler": 310000
+    },
+    {
+      "NumeroCita": 4,
+      "NombreSolicitante": "Sofía Ruiz",
+      "NumeroDocumento": 6315616515,
+      "Teléfono": 1589753701,
+      "Fecha": "2024-12-28",
+      "ValorAlquiler": 305000
+    },
+    {
+      "NumeroCita": 5,
+      "NombreSolicitante": "Miguel Ángel",
+      "NumeroDocumento": 6315616516,
+      "Teléfono": 1589753702,
+      "Fecha": "2024-12-27",
+      "ValorAlquiler": 290000
+    },
+    {
+      "NumeroCita": 6,
+      "NombreSolicitante": "Valeria López",
+      "NumeroDocumento": 6315616517,
+      "Teléfono": 1589753703,
+      "Fecha": "2024-12-26",
+      "ValorAlquiler": 330000
+    },
+    {
+      "NumeroCita": 7,
+      "NombreSolicitante": "Jorge Morales",
+      "NumeroDocumento": 6315616518,
+      "Teléfono": 1589753704,
+      "Fecha": "2024-12-25",
+      "ValorAlquiler": 300000
+    },
+    {
+      "NumeroCita": 8,
+      "NombreSolicitante": "Natalia Pérez",
+      "NumeroDocumento": 6315616519,
+      "Teléfono": 1589753705,
+      "Fecha": "2024-12-24",
+      "ValorAlquiler": 320000
+    },
+    {
+      "NumeroCita": 9,
+      "NombreSolicitante": "Ricardo Torres",
+      "NumeroDocumento": 6315616520,
+      "Teléfono": 1589753706,
+      "Fecha": "2024-12-23",
+      "ValorAlquiler": 310000
+    },
+    {
+      "NumeroCita": 10,
+      "NombreSolicitante": "Isabel Fernández",
+      "NumeroDocumento": 6315616521,
+      "Teléfono": 1589753707,
+      "Fecha": "2024-12-22",
+      "ValorAlquiler": 305000
+    },
+    {
+      "NumeroCita": 11,
+      "NombreSolicitante": "Andrés Gómez",
+      "NumeroDocumento": 6315616522,
+      "Teléfono": 1589753708,
+      "Fecha": "2024-12-21",
+      "ValorAlquiler": 290000
+    },
+    {
+      "NumeroCita": 12,
+      "NombreSolicitante": "Gabriela Martínez",
+      "NumeroDocumento": 6315616523,
+      "Teléfono": 1589753709,
+      "Fecha": "2024-12-20",
+      "ValorAlquiler": 330000
+    },
+    {
+      "NumeroCita": 13,
+      "NombreSolicitante": "Fernando Díaz",
+      "NumeroDocumento": 6315616524,
+      "Teléfono": 1589753710,
+      "Fecha": "2024-12-19",
+      "ValorAlquiler": 300000
+    },
+    {
+      "NumeroCita": 14,
+      "NombreSolicitante": "Claudia Moreno",
+      "NumeroDocumento": 6315616525,
+      "Teléfono": 1589753711,
+      "Fecha": "2024-12-18",
+      "ValorAlquiler": 320000
+    },
+    {
+      "NumeroCita": 15,
+      "NombreSolicitante": "Pedro Jiménez",
+      "NumeroDocumento": 6315616526,
+      "Teléfono": 1589753712,
+      "Fecha": "2024-12-17",
+      "ValorAlquiler": 310000
+    },
+    {
+      "NumeroCita": 16,
+      "NombreSolicitante": "Laura Moreno",
+      "NumeroDocumento": 6315616527,
+      "Teléfono": 1589753713,
+      "Fecha": "2024-12-16",
+      "ValorAlquiler": 305000
+    },
+    {
+      "NumeroCita": 17,
+      "NombreSolicitante": "Juan Rodríguez",
+      "NumeroDocumento": 6315616528,
+      "Teléfono": 1589753714,
+      "Fecha": "2024-12-15",
+      "ValorAlquiler": 290000
+    },
+    {
+      "NumeroCita": 18,
+      "NombreSolicitante": "María Gómez",
+      "NumeroDocumento": 6315616529,
+      "Teléfono": 1589753715,
+      "Fecha": "2024-12-14",
+      "ValorAlquiler": 330000
+    },
+    {
+      "NumeroCita": 19,
+      "NombreSolicitante": "Tomás Rodríguez",
+      "NumeroDocumento": 6315616530,
+      "Teléfono": 1589753716,
+      "Fecha": "2024-12-13",
+      "ValorAlquiler": 300000
+    },
+    {
+      "NumeroCita": 20,
+      "NombreSolicitante": "Isabela Jiménez",
+      "NumeroDocumento": 6315616531,
+      "Teléfono": 1589753717,
+      "Fecha": "2024-12-12",
+      "ValorAlquiler": 320000
+    },
+    {
+      "NumeroCita": 21,
+      "NombreSolicitante": "David López",
+      "NumeroDocumento": 6315616532,
+      "Teléfono": 1589753718,
+      "Fecha": "2024-12-11",
+      "ValorAlquiler": 310000
+    },
+    {
+      "NumeroCita": 22,
+      "NombreSolicitante": "Valentina Pérez",
+      "NumeroDocumento": 6315616533,
+      "Teléfono": 1589753719,
+      "Fecha": "2024-12-10",
+      "ValorAlquiler": 305000
+    },
+    {
+      "NumeroCita": 23,
+      "NombreSolicitante": "Jorge Ramírez",
+      "NumeroDocumento": 6315616534,
+      "Teléfono": 1589753720,
+      "Fecha": "2024-12-09",
+      "ValorAlquiler": 290000
+    },
+    {
+      "NumeroCita": 24,
+      "NombreSolicitante": "Natalia Moreno",
+      "NumeroDocumento": 6315616535,
+      "Teléfono": 1589753721,
+      "Fecha": "2024-12-08",
+      "ValorAlquiler": 330000
+    },
+    {
+      "NumeroCita": 25,
+      "NombreSolicitante": "Luis Gómez",
+      "NumeroDocumento": 6315616536,
+      "Teléfono": 1589753722,
+      "Fecha": "2024-12-07",
+      "ValorAlquiler": 300000
+    }
+  ],
+  "Reuniones":[
+    {
+      "NumeroReunion": 1,
+      "Motivo": "Repartición espacios del Parqueadero",
+      "Fecha": "2024-12-31",
+      "Horario": "13:30:00 - 18:45:00"
+    },
+    {
+      "NumeroReunion": 2,
+      "Motivo": "Revisión de contratos de alquiler",
+      "Fecha": "2024-12-30",
+      "Horario": "09:00:00 - 12:00:00"
+    },
+    {
+      "NumeroReunion": 3,
+      "Motivo": "Evaluación de costos de mantenimiento",
+      "Fecha": "2024-12-29",
+      "Horario": "10:00:00 - 15:00:00"
+    },
+    {
+      "NumeroReunion": 4,
+      "Motivo": "Actualización de reglamentos internos",
+      "Fecha": "2024-12-28",
+      "Horario": "14:00:00 - 16:00:00"
+    },
+    {
+      "NumeroReunion": 5,
+      "Motivo": "Planificación de eventos comunitarios",
+      "Fecha": "2024-12-27",
+      "Horario": "11:00:00 - 13:00:00"
+    },
+    {
+      "NumeroReunion": 6,
+      "Motivo": "Discusión sobre mejoras en seguridad",
+      "Fecha": "2024-12-26",
+      "Horario": "15:00:00 - 17:00:00"
+    },
+    {
+      "NumeroReunion": 7,
+      "Motivo": "Revisión de solicitudes de reparación",
+      "Fecha": "2024-12-25",
+      "Horario": "09:30:00 - 12:30:00"
+    },
+    {
+      "NumeroReunion": 8,
+      "Motivo": "Ajustes en el presupuesto anual",
+      "Fecha": "2024-12-24",
+      "Horario": "13:00:00 - 17:00:00"
+    },
+    {
+      "NumeroReunion": 9,
+      "Motivo": "Análisis de nuevos proyectos",
+      "Fecha": "2024-12-23",
+      "Horario": "10:30:00 - 14:30:00"
+    },
+    {
+      "NumeroReunion": 10,
+      "Motivo": "Preparación para auditoría interna",
+      "Fecha": "2024-12-22",
+      "Horario": "08:00:00 - 12:00:00"
+    },
+    {
+      "NumeroReunion": 11,
+      "Motivo": "Revisión de políticas de seguridad",
+      "Fecha": "2024-12-21",
+      "Horario": "11:30:00 - 13:30:00"
+    },
+    {
+      "NumeroReunion": 12,
+      "Motivo": "Estudio de satisfacción de residentes",
+      "Fecha": "2024-12-20",
+      "Horario": "14:00:00 - 16:00:00"
+    },
+    {
+      "NumeroReunion": 13,
+      "Motivo": "Discusión sobre contratos de proveedores",
+      "Fecha": "2024-12-19",
+      "Horario": "09:00:00 - 11:00:00"
+    },
+    {
+      "NumeroReunion": 14,
+      "Motivo": "Planificación de renovaciones",
+      "Fecha": "2024-12-18",
+      "Horario": "13:00:00 - 15:00:00"
+    },
+    {
+      "NumeroReunion": 15,
+      "Motivo": "Evaluación de riesgos y seguridad",
+      "Fecha": "2024-12-17",
+      "Horario": "10:00:00 - 12:00:00"
+    },
+    {
+      "NumeroReunion": 16,
+      "Motivo": "Actualización de la política de reciclaje",
+      "Fecha": "2024-12-16",
+      "Horario": "15:00:00 - 17:00:00"
+    },
+    {
+      "NumeroReunion": 17,
+      "Motivo": "Coordinación de actividades para el próximo año",
+      "Fecha": "2024-12-15",
+      "Horario": "11:00:00 - 13:00:00"
+    },
+    {
+      "NumeroReunion": 18,
+      "Motivo": "Revisión de informes financieros",
+      "Fecha": "2024-12-14",
+      "Horario": "08:00:00 - 10:00:00"
+    },
+    {
+      "NumeroReunion": 19,
+      "Motivo": "Análisis de propuestas de nuevos servicios",
+      "Fecha": "2024-12-13",
+      "Horario": "12:00:00 - 14:00:00"
+    },
+    {
+      "NumeroReunion": 20,
+      "Motivo": "Evaluación de políticas de atención al cliente",
+      "Fecha": "2024-12-12",
+      "Horario": "09:00:00 - 11:00:00"
+    },
+    {
+      "NumeroReunion": 21,
+      "Motivo": "Revisión de avances en proyectos en curso",
+      "Fecha": "2024-12-11",
+      "Horario": "13:00:00 - 15:00:00"
+    },
+    {
+      "NumeroReunion": 22,
+      "Motivo": "Preparación de informes de fin de año",
+      "Fecha": "2024-12-10",
+      "Horario": "10:00:00 - 12:00:00"
+    },
+    {
+      "NumeroReunion": 23,
+      "Motivo": "Discusión sobre mejoras en el servicio de mantenimiento",
+      "Fecha": "2024-12-09",
+      "Horario": "14:00:00 - 16:00:00"
+    },
+    {
+      "NumeroReunion": 24,
+      "Motivo": "Revisión de políticas de uso de espacios comunes",
+      "Fecha": "2024-12-08",
+      "Horario": "09:30:00 - 11:30:00"
+    },
+    {
+      "NumeroReunion": 25,
+      "Motivo": "Planificación de eventos para el próximo año",
+      "Fecha": "2024-12-07",
+      "Horario": "12:00:00 - 14:00:00"
+    }
+  ],
+  "Porteros":[
+    {
+      "Nombre": "Mateo Martinez",
+      "NumeroDocumento": 1548952136,
+      "Teléfono": 325654785,
+      "Correo": "mateo.martinez@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Lucía Gómez",
+      "NumeroDocumento": 1548952137,
+      "Teléfono": 325654786,
+      "Correo": "lucia.gomez@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Santiago Pérez",
+      "NumeroDocumento": 1548952138,
+      "Teléfono": 325654787,
+      "Correo": "santiago.perez@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Ana María Torres",
+      "NumeroDocumento": 1548952139,
+      "Teléfono": 325654788,
+      "Correo": "ana.torres@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Carlos Díaz",
+      "NumeroDocumento": 1548952140,
+      "Teléfono": 325654789,
+      "Correo": "carlos.diaz@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Laura Fernández",
+      "NumeroDocumento": 1548952141,
+      "Teléfono": 325654790,
+      "Correo": "laura.fernandez@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Jorge Ramírez",
+      "NumeroDocumento": 1548952142,
+      "Teléfono": 325654791,
+      "Correo": "jorge.ramirez@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Isabela Martínez",
+      "NumeroDocumento": 1548952143,
+      "Teléfono": 325654792,
+      "Correo": "isabela.martinez@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Ricardo Morales",
+      "NumeroDocumento": 1548952144,
+      "Teléfono": 325654793,
+      "Correo": "ricardo.morales@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Valeria Ruiz",
+      "NumeroDocumento": 1548952145,
+      "Teléfono": 325654794,
+      "Correo": "valeria.ruiz@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Felipe Gómez",
+      "NumeroDocumento": 1548952146,
+      "Teléfono": 325654795,
+      "Correo": "felipe.gomez@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Catalina López",
+      "NumeroDocumento": 1548952147,
+      "Teléfono": 325654796,
+      "Correo": "catalina.lopez@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Tomás Martínez",
+      "NumeroDocumento": 1548952148,
+      "Teléfono": 325654797,
+      "Correo": "tomas.martinez@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "María Fernanda",
+      "NumeroDocumento": 1548952149,
+      "Teléfono": 325654798,
+      "Correo": "maria.fernanda@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Daniel Gómez",
+      "NumeroDocumento": 1548952150,
+      "Teléfono": 325654799,
+      "Correo": "daniel.gomez@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Camila Morales",
+      "NumeroDocumento": 1548952151,
+      "Teléfono": 325654800,
+      "Correo": "camila.morales@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Alejandro Ramírez",
+      "NumeroDocumento": 1548952152,
+      "Teléfono": 325654801,
+      "Correo": "alejandro.ramirez@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Natalia Gómez",
+      "NumeroDocumento": 1548952153,
+      "Teléfono": 325654802,
+      "Correo": "natalia.gomez@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Javier Fernández",
+      "NumeroDocumento": 1548952154,
+      "Teléfono": 325654803,
+      "Correo": "javier.fernandez@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Sofía Ramírez",
+      "NumeroDocumento": 1548952155,
+      "Teléfono": 325654804,
+      "Correo": "sofia.ramirez@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Samuel Rodríguez",
+      "NumeroDocumento": 1548952156,
+      "Teléfono": 325654805,
+      "Correo": "samuel.rodriguez@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Paola Herrera",
+      "NumeroDocumento": 1548952157,
+      "Teléfono": 325654806,
+      "Correo": "paola.herrera@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Andrés Torres",
+      "NumeroDocumento": 1548952158,
+      "Teléfono": 325654807,
+      "Correo": "andres.torres@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Elena Sánchez",
+      "NumeroDocumento": 1548952159,
+      "Teléfono": 325654808,
+      "Correo": "elena.sanchez@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Oscar González",
+      "NumeroDocumento": 1548952160,
+      "Teléfono": 325654809,
+      "Correo": "oscar.gonzalez@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Lina María",
+      "NumeroDocumento": 1548952161,
+      "Teléfono": 325654810,
+      "Correo": "lina.maria@gmail.com",
+      "TipoTurno": "Diurno"
+    },
+    {
+      "Nombre": "Luis Fernando",
+      "NumeroDocumento": 1548952162,
+      "Teléfono": 325654811,
+      "Correo": "luis.fernando@gmail.com",
+      "TipoTurno": "Nocturno"
+    },
+    {
+      "Nombre": "Diana Moreno",
+      "NumeroDocumento": 1548952163,
+      "Teléfono": 325654812,
+      "Correo": "diana.moreno@gmail.com",
+      "TipoTurno": "Diurno"
+    }
+  ]
+}

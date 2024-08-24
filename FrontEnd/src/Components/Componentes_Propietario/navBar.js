@@ -1,7 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import myImg from "../../img/logo2.png";
 
 export function NavBar() {
+  const navigate = useNavigate();
+
+  const handleProfileClick = () => {
+    navigate("/profile");
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark w-100 bg-dark">
       <div className="container px-lg-5">
@@ -22,9 +28,9 @@ export function NavBar() {
         <div className="collapse navbar-collapse" id="navContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item mx-3">
-              <Link className="btn btn-light active" aria-current="page" to="/profile">
+              <button className="btn btn-light active" onClick={handleProfileClick}>
                 Perfil
-              </Link>
+              </button>
             </li>
             <li className="nav-item mx-3">
               <Link className="btn btn-light" to="/">

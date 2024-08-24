@@ -3,7 +3,8 @@ import Tabla from "./tabla";
 import { useState } from "react";
 
 const SideBar = () => {
-    const [currentTable, setCurrentTable] = useState("Parqueadero");
+  const [currentTable, setCurrentTable] = useState("Parqueadero");
+
   return (
     <>
       <div className="d-flex flex-row h-100">
@@ -17,34 +18,24 @@ const SideBar = () => {
               <li className="nav-item">
                 <Link
                   onClick={() => setCurrentTable("Parqueadero")}
-                  id="myLink"
-                  href="#"
                   className={
                     currentTable === "Parqueadero"
                       ? "nav-link active"
                       : "nav-link text-white"
                   }
-                  aria-current="page"
                 >
-                  <svg className="bi me-2" width={16} height={16}>
-                    <use xlinkHref="#home" />
-                  </svg>
                   Parqueadero
                 </Link>
               </li>
               <li>
                 <Link
                   onClick={() => setCurrentTable("SalonComunal")}
-                  href="#"
                   className={
                     currentTable === "SalonComunal"
                       ? "nav-link active"
                       : "nav-link text-white"
                   }
                 >
-                  <svg className="bi me-2" width={16} height={16}>
-                    <use xlinkHref="#speedometer2" />
-                  </svg>
                   Salon Comunal
                 </Link>
               </li> 
@@ -52,9 +43,7 @@ const SideBar = () => {
             <hr />
           </div>
         </div>
-        <Tabla
-          apiS={currentTable}
-        />
+        <Tabla apiS={currentTable} />
       </div>
     </>
   );

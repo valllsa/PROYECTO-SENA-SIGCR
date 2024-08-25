@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faTrash, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
+import { useUser } from "../../UserContext";
+import Calendario from "./calendario"; // Asegúrate de que la ruta sea correcta
 
 /* Añadir iconos a la libreria */
 library.add(faTrash, faPenToSquare);
@@ -11,6 +13,7 @@ library.add(faTrash, faPenToSquare);
 const Tabla = ({ apiS }) => {
   const [currentPageMoto, setCurrentPageMoto] = useState(1);
   const [currentPageCarro, setCurrentPageCarro] = useState(1);
+  const { user, setUser } = useUser();
 
   const recordsPerPage = 12;
 
@@ -18,14 +21,17 @@ const Tabla = ({ apiS }) => {
   const [dataCarro, setDataCarro] = useState([]);
 
   useEffect(() => {
-    async function fetchApartamentos() {
+    const fetchApartamentos = async () => {
       try {
-        const responseMoto = await axios.get(`http://localhost:4000/${apiS}?TipoEspacio=Moto`);
+        const [responseMoto, responseCarro] = await Promise.all([
+          axios.get(`http://localhost:4000/${apiS}?TipoEspacio=Moto`),
+          axios.get(`http://localhost:4000/${apiS}?TipoEspacio=Carro`)
+        ]);
+
         setDataMoto(responseMoto.data);
-        const responseCarro = await axios.get(`http://localhost:4000/${apiS}?TipoEspacio=Carro`);
         setDataCarro(responseCarro.data);
 
-        if (responseMoto.data.length > 0 && responseCarro.data.length > 0) {
+        if (responseMoto.data.length > 0 || responseCarro.data.length > 0) {
           console.log("Datos cargados");
         } else {
           console.log("No se encontraron datos");
@@ -33,7 +39,7 @@ const Tabla = ({ apiS }) => {
       } catch (error) {
         console.error("Error al obtener los datos:", error);
       }
-    }
+    };
 
     fetchApartamentos();
   }, [apiS]);
@@ -44,11 +50,13 @@ const Tabla = ({ apiS }) => {
   const indexOfLastRecordCarro = currentPageCarro * recordsPerPage;
   const indexOfFirstRecordCarro = indexOfLastRecordCarro - recordsPerPage;
 
-  const currentRecordsMoto = dataMoto.filter(record => record.Estado === 'Disponible')
+  const currentRecordsMoto = dataMoto
+    .filter(record => record.Estado === 'Disponible')
     .slice(indexOfFirstRecordMoto, indexOfLastRecordMoto);
   const totalPagesMoto = Math.ceil(dataMoto.filter(record => record.Estado === 'Disponible').length / recordsPerPage);
 
-  const currentRecordsCarro = dataCarro.filter(record => record.Estado === 'Disponible')
+  const currentRecordsCarro = dataCarro
+    .filter(record => record.Estado === 'Disponible')
     .slice(indexOfFirstRecordCarro, indexOfLastRecordCarro);
   const totalPagesCarro = Math.ceil(dataCarro.filter(record => record.Estado === 'Disponible').length / recordsPerPage);
 
@@ -60,12 +68,10 @@ const Tabla = ({ apiS }) => {
     setCurrentPageCarro(pageNumber);
   };
 
-  const rentSpace = async (spaceId, tipoEspacio) => {
+  const rentSpace = async (spaceId, tipoEspacio, espacioNumero) => {
     try {
-      // solicitud path para actualizacion de el estado 
       await axios.patch(`http://localhost:4000/${apiS}/${spaceId}`, { Estado: 'Ocupado' });
-  
-  
+
       if (tipoEspacio === 'Moto') {
         setDataMoto(prevData => prevData.map(item => 
           item.id === spaceId ? { ...item, Estado: 'Ocupado' } : item
@@ -75,14 +81,22 @@ const Tabla = ({ apiS }) => {
           item.id === spaceId ? { ...item, Estado: 'Ocupado' } : item
         ));
       }
-  
-      
+
+      const updatedUser = {
+        ...user,
+        EspacioParqueadero: espacioNumero
+      };
+
+      await axios.patch(`http://localhost:4000/Propietarios/${user.id}`, updatedUser);
+
+      setUser(updatedUser);
+
       alert("Usted rentó un espacio de parqueadero exitosamente");
     } catch (error) {
       console.error("Error al rentar el espacio:", error);
     }
   };
-  
+
   return (
     <div className="w-100 h-100">
       <div className="card m-0 h-100">
@@ -109,7 +123,7 @@ const Tabla = ({ apiS }) => {
                     <button
                       type="button"
                       className="btn bg-success btn-sm p-1"
-                      onClick={() => rentSpace(record.id, 'Moto')}
+                      onClick={() => rentSpace(record.id, 'Moto', record.NumeroEspacio)}
                     >
                       Rentar
                     </button>
@@ -136,7 +150,7 @@ const Tabla = ({ apiS }) => {
                       <div className="dataTables_paginate paging_simple_numbers">
                         <ul className="pagination">
                           <li className={`paginate_button page-item previous ${currentPageMoto === 1 ? "disabled" : ""}`}>
-                            <Link onClick={() => handlePageChangeMoto(currentPageMoto - 1)} href="#" className="page-link">
+                            <Link onClick={() => handlePageChangeMoto(currentPageMoto - 1)} to="#" className="page-link">
                               Anterior
                             </Link>
                           </li>
@@ -148,7 +162,7 @@ const Tabla = ({ apiS }) => {
                             </li>
                           ))}
                           <li className={`paginate_button page-item next ${currentPageMoto === totalPagesMoto ? "disabled" : ""}`}>
-                            <Link onClick={() => handlePageChangeMoto(currentPageMoto + 1)} href="#" className="page-link">
+                            <Link onClick={() => handlePageChangeMoto(currentPageMoto + 1)} to="#" className="page-link">
                               Siguiente
                             </Link>
                           </li>
@@ -173,15 +187,15 @@ const Tabla = ({ apiS }) => {
                   Buscar
                 </button>
               </form>
-              <h2 className="text-center mt-3">Carro</h2>
-              <div className="d-flex flex-wrap">
+              <h2 className="text-center">Carro</h2>
+              <div className="d-flex flex-wrap mt-3">
                 {currentRecordsCarro.map((record, index) => (
                   <div key={index} className="d-flex flex-column border border-primary rounded-4 w-25 p-2">
                     <span className="fs-3 fw-bolder">{record.NumeroEspacio}</span>
                     <button
                       type="button"
                       className="btn bg-success btn-sm p-1"
-                      onClick={() => rentSpace(record.id, 'Carro')}
+                      onClick={() => rentSpace(record.id, 'Carro', record.NumeroEspacio)}
                     >
                       Rentar
                     </button>
@@ -208,7 +222,7 @@ const Tabla = ({ apiS }) => {
                       <div className="dataTables_paginate paging_simple_numbers">
                         <ul className="pagination">
                           <li className={`paginate_button page-item previous ${currentPageCarro === 1 ? "disabled" : ""}`}>
-                            <Link onClick={() => handlePageChangeCarro(currentPageCarro - 1)} href="#" className="page-link">
+                            <Link onClick={() => handlePageChangeCarro(currentPageCarro - 1)} to="#" className="page-link">
                               Anterior
                             </Link>
                           </li>
@@ -220,7 +234,7 @@ const Tabla = ({ apiS }) => {
                             </li>
                           ))}
                           <li className={`paginate_button page-item next ${currentPageCarro === totalPagesCarro ? "disabled" : ""}`}>
-                            <Link onClick={() => handlePageChangeCarro(currentPageCarro + 1)} href="#" className="page-link">
+                            <Link onClick={() => handlePageChangeCarro(currentPageCarro + 1)} to="#" className="page-link">
                               Siguiente
                             </Link>
                           </li>
@@ -233,7 +247,7 @@ const Tabla = ({ apiS }) => {
             </div>
           </div>
         ) : (
-          <div>Componente no compatible</div>
+          <Calendario />
         )}
       </div>
     </div>

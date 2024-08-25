@@ -9,57 +9,25 @@ import MainPropietario from "./Pages/auth/propietario/mainPropietario";
 import MainPortero from "./Pages/auth/portero/mainPortero.";
 import RegisterPropietario from "./Pages/auth/Login/RegisterPropietario";
 import InsertForm from "./Pages/auth/admin/insertForm";
-import Profile from "./Pages/auth/propietario/profile"
+import Profile from "./Pages/auth/propietario/profile";
+import Tabla from "./Components/Componentes_Propietario/tabla"; // Asegúrate de la ruta correcta
+
 function App() {
   return (
     <Fragment>
       <Router>
         <Routes>
-          {/* <Route path="/" exact element={<Main />}></Route>
-          <Route path="MainAdmin" exact element={<MainAdmin />}></Route>
-          <Route
-            path="LoginAdministrador"
-            exact
-            element={<LoginAdministrador />}
-          ></Route>
-          <Route path="LoginPortero" exact element={<LoginPortero />}></Route>
-          <Route
-            path="LoginPropietario"
-            exact
-            element={<LoginPropietario />}
-          ></Route>
-          <Route
-            path="VistaPropietario"
-            exact
-            element={<VistaPropietario />}
-          ></Route> */}
           <Route path="/" exact element={<Main />}></Route>
-          <Route path="MainAdmin" exact element={<MainAdmin />}></Route>
+          <Route path="MainAdmin" exact element={<MainAdmin />}>
+            <Route path="Tabla" element={<Tabla apiS="Parqueadero" />} />
+          </Route>
           <Route path="MainPortero" exact element={<MainPortero />}></Route>
-          <Route
-            path="LoginAdministrador"
-            exact
-            element={<LoginAdministrador />}
-          ></Route>
+          <Route path="LoginAdministrador" exact element={<LoginAdministrador />}></Route>
           <Route path="LoginPortero" exact element={<LoginPortero />}></Route>
-          <Route
-            path="RegisterPropieterio"
-            exact
-            element={<RegisterPropietario />}
-          ></Route>
-          <Route
-            path="LoginPropietario"
-            exact
-            element={<LoginPropietario />}
-          ></Route>
-          <Route
-            path="MainPropietario"
-            exact
-            element={<MainPropietario />}
-          ></Route>
-          <Route path="/profile" 
-            exact
-            element={<Profile />} />
+          <Route path="RegisterPropietario" exact element={<RegisterPropietario />}></Route>
+          <Route path="LoginPropietario" exact element={<LoginPropietario />}></Route>
+          <Route path="MainPropietario" exact element={<MainPropietario />}></Route>
+          <Route path="/profile" exact element={<Profile />} />
           <Route path="InsertForm" exact element={<InsertForm />}></Route>
         </Routes>
       </Router>

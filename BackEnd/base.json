@@ -173,7 +173,7 @@
       "Correo": "denys@gmail.com",
       "NumeroDocumento": 1548952136,
       "MesesAtrasados": 2,
-      "EspacioParqueadero": 0,
+      "EspacioParqueadero": 32,
       "Username": "generic2",
       "Password": "passG2",
       "id": "3fde"
@@ -185,7 +185,7 @@
       "Correo": "marta.lopez@gmail.com",
       "NumeroDocumento": 1548952137,
       "MesesAtrasados": 1,
-      "EspacioParqueadero": 0,
+      "EspacioParqueadero": 34,
       "Username": "generic3",
       "Password": "passG3",
       "id": "1ece"
@@ -233,7 +233,7 @@
       "Correo": "elena.rodriguez@gmail.com",
       "NumeroDocumento": 1548952141,
       "MesesAtrasados": 0,
-      "EspacioParqueadero": 0,
+      "EspacioParqueadero": 27,
       "Username": "generic7",
       "Password": "passG7",
       "id": "0e3e"
@@ -549,13 +549,13 @@
     {
       "NumeroEspacio": 4,
       "TipoEspacio": "Carro",
-      "Estado": "Ocupado",
+      "Estado": "Disponible",
       "id": "0b2c"
     },
     {
       "NumeroEspacio": 5,
       "TipoEspacio": "Moto",
-      "Estado": "Ocupado",
+      "Estado": "Disponible",
       "id": "6c09"
     },
     {
@@ -567,7 +567,7 @@
     {
       "NumeroEspacio": 7,
       "TipoEspacio": "Moto",
-      "Estado": "Disponible",
+      "Estado": "Ocupado",
       "id": "e8cd"
     },
     {
@@ -597,7 +597,7 @@
     {
       "NumeroEspacio": 12,
       "TipoEspacio": "Carro",
-      "Estado": "Ocupado",
+      "Estado": "Disponible",
       "id": "8549"
     },
     {
@@ -621,7 +621,7 @@
     {
       "NumeroEspacio": 16,
       "TipoEspacio": "Carro",
-      "Estado": "Ocupado",
+      "Estado": "Disponible",
       "id": "e21e"
     },
     {
@@ -639,7 +639,7 @@
     {
       "NumeroEspacio": 19,
       "TipoEspacio": "Moto",
-      "Estado": "Ocupado",
+      "Estado": "Disponible",
       "id": "bdc5"
     },
     {
@@ -657,7 +657,7 @@
     {
       "NumeroEspacio": 22,
       "TipoEspacio": "Carro",
-      "Estado": "Ocupado",
+      "Estado": "Disponible",
       "id": "04ab"
     },
     {
@@ -699,7 +699,7 @@
     {
       "NumeroEspacio": 29,
       "TipoEspacio": "Moto",
-      "Estado": "Ocupado",
+      "Estado": "Disponible",
       "id": "113d"
     },
     {
@@ -717,19 +717,19 @@
     {
       "NumeroEspacio": 32,
       "TipoEspacio": "Moto",
-      "Estado": "Disponible",
+      "Estado": "Ocupado",
       "id": "a1b3"
     },
     {
       "NumeroEspacio": 33,
       "TipoEspacio": "Carro",
-      "Estado": "Ocupado",
+      "Estado": "Disponible",
       "id": "a1b4"
     },
     {
       "NumeroEspacio": 34,
       "TipoEspacio": "Carro",
-      "Estado": "Disponible",
+      "Estado": "Ocupado",
       "id": "a1b5"
     },
     {
@@ -1266,6 +1266,55 @@
       "Fecha": "2024-12-07",
       "ValorAlquiler": 300000,
       "id": "ff4e"
+    }
+  ],
+  "ReservaSalon": [
+    {
+      "id": "f003"
+    },
+    {
+      "id": "0cfd",
+      "nombre": "Denys Fontecha",
+      "numeroDocumento": "1548952136",
+      "telefono": "325654785",
+      "codigoVivienda": "1101",
+      "horaInicio": "21:00",
+      "horaFin": "02:00",
+      "motivo": "reunion ",
+      "Fecha": "2024-08-31"
+    },
+    {
+      "id": "6783",
+      "nombre": "gfngd",
+      "numeroDocumento": "ghnh",
+      "telefono": "hgmh",
+      "codigoVivienda": "hgmhjnb",
+      "horaInicio": "20:09",
+      "horaFin": "03:45",
+      "motivo": "mhm",
+      "Fecha": "2024-08-31"
+    },
+    {
+      "id": "a382",
+      "nombre": "fdbgf",
+      "numeroDocumento": "gngbv",
+      "telefono": "dfbv",
+      "codigoVivienda": "dfbc",
+      "horaInicio": "18:07",
+      "horaFin": "02:43",
+      "motivo": "thgbv",
+      "Fecha": "2024-09-30"
+    },
+    {
+      "id": "6b2a",
+      "nombre": "Denys Fontecha",
+      "numeroDocumento": "1548952136",
+      "telefono": "325654785",
+      "codigoVivienda": "325654785",
+      "horaInicio": "21:00",
+      "horaFin": "02:00",
+      "motivo": "Fiesta de grauacion ",
+      "Fecha": "2024-08-16"
     }
   ],
   "Reuniones": [

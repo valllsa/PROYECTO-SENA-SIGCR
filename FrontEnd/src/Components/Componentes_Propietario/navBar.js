@@ -28,8 +28,8 @@ export function NavBar() {
         <div className="collapse navbar-collapse" id="navContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item mx-3">
-              <button className="btn btn-light active" onClick={handleProfileClick}>
-                Perfil
+              <button className="btn btn-light" onClick={handleProfileClick}>
+                Perfil 
               </button>
             </li>
             <li className="nav-item mx-3">

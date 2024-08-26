@@ -50,12 +50,12 @@
 }
 
 .calendario-day.green {
-  background-color: #d4edda;
+  background-color: #63d87e;
   color: #155724;
 }
 
 .calendario-day.red {
-  background-color: #f8d7da;
+  background-color: #e2414ed8;
   color: #721c24;
 }
 

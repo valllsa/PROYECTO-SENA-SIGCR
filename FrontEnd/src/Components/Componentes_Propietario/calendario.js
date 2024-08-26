@@ -8,40 +8,15 @@ const Calendario = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
   const [formData, setFormData] = useState({
-    nombre: '',
-    numeroDocumento: '',
-    telefono: '',
-    codigoVivienda: '',
-    horaInicio: '',
-    horaFin: '',
-    motivo: ''
+    Nombre: '',
+    NumeroDocumento: '',
+    Telefono: '',
+    CodigoVivienda: '',
+    HoraInicio: '',
+    HoraFin: '',
+    Motivo: ''
   });
   const [reservas, setReservas] = useState([]);
-  const [usuarioActual, setUsuarioActual] = useState({});
-
-  useEffect(() => {
-    const fetchPropietario = async () => {
-      try {
-        const propietarioId = localStorage.getItem('propietarioId');
-        if (propietarioId) {
-          const response = await axios.get(`http://localhost:4000/Propietarios/${propietarioId}`);
-          setUsuarioActual(response.data);
-          setFormData({
-            nombre: response.data.Nombre,
-            numeroDocumento: response.data.NumeroDocumento,
-            telefono: response.data.Teléfono,
-            codigoVivienda: response.data.CodigoVivienda,
-            horaInicio: '',
-            horaFin: '',
-            motivo: ''
-          });
-        }
-      } catch (error) {
-        console.error('Error al obtener los datos del propietario', error);
-      }
-    };
-    fetchPropietario();
-  }, []);
 
   useEffect(() => {
     const fetchReservas = async () => {
@@ -85,7 +60,6 @@ const Calendario = () => {
       const response = await axios.post('http://localhost:4000/ReservaSalon', {
         ...formData,
         Fecha: selectedDate,
-        NumeroDocumento: usuarioActual.NumeroDocumento
       });
 
       setReservas(prevReservas => [...prevReservas, {
@@ -94,7 +68,7 @@ const Calendario = () => {
       }]);
 
       handleModalClose();
-      alert('Reserva realizada con éxito!');
+      alert('¡Reserva realizada con éxito!');
     } catch (error) {
       console.error('Error detallado:', error);
       alert(`Error al realizar la reserva: ${error.response?.data.message || 'Por favor, intente de nuevo.'}`);
@@ -105,7 +79,7 @@ const Calendario = () => {
     const dateStr = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
     const reservasEnFecha = reservas.filter(res => res.Fecha === dateStr);
     if (reservasEnFecha.length > 0) {
-      return reservasEnFecha.some(res => res.NumeroDocumento === usuarioActual.NumeroDocumento) ? 'green' : 'red';
+      return reservasEnFecha.some(res => res.NumeroDocumento === formData.NumeroDocumento) ? 'green' : 'red';
     }
     return 'default';
   };
@@ -149,38 +123,38 @@ const Calendario = () => {
             <h2>Reservar para el {selectedDate}</h2>
             <form onSubmit={handleFormSubmit}>
               <div className="form-group">
-                <label htmlFor="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" value={formData.nombre} onChange={handleChange} required />
+                <label htmlFor="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="Nombre" value={formData.Nombre} onChange={handleChange} required />
               </div>
 
               <div className="form-group">
-                <label htmlFor="numeroDocumento">Número de Documento:</label>
-                <input type="text" id="numeroDocumento" name="numeroDocumento" value={formData.numeroDocumento} onChange={handleChange} required />
+                <label htmlFor="NumeroDocumento">Número de Documento:</label>
+                <input type="text" id="NumeroDocumento" name="NumeroDocumento" value={formData.NumeroDocumento} onChange={handleChange} required />
               </div>
 
               <div className="form-group">
-                <label htmlFor="telefono">Teléfono:</label>
-                <input type="text" id="telefono" name="telefono" value={formData.telefono} onChange={handleChange} required />
+                <label htmlFor="Telefono">Teléfono:</label>
+                <input type="text" id="Telefono" name="Telefono" value={formData.Telefono} onChange={handleChange} required />
               </div>
 
               <div className="form-group">
-                <label htmlFor="codigoVivienda">Código de Vivienda:</label>
-                <input type="text" id="codigoVivienda" name="codigoVivienda" value={formData.codigoVivienda} onChange={handleChange} required />
+                <label htmlFor="CodigoVivienda">Código de Vivienda:</label>
+                <input type="text" id="CodigoVivienda" name="CodigoVivienda" value={formData.CodigoVivienda} onChange={handleChange} required />
               </div>
 
               <div className="form-group">
-                <label htmlFor="horaInicio">Hora de Inicio:</label>
-                <input type="time" id="horaInicio" name="horaInicio" value={formData.horaInicio} onChange={handleChange} required />
+                <label htmlFor="HoraInicio">Hora de Inicio:</label>
+                <input type="time" id="HoraInicio" name="HoraInicio" value={formData.HoraInicio} onChange={handleChange} required />
               </div>
 
               <div className="form-group">
-                <label htmlFor="horaFin">Hora de Fin:</label>
-                <input type="time" id="horaFin" name="horaFin" value={formData.horaFin} onChange={handleChange} required />
+                <label htmlFor="HoraFin">Hora de Fin:</label>
+                <input type="time" id="HoraFin" name="HoraFin" value={formData.HoraFin} onChange={handleChange} required />
               </div>
 
               <div className="form-group">
-                <label htmlFor="motivo">Motivo de la Reserva:</label>
-                <textarea id="motivo" name="motivo" rows="3" value={formData.motivo} onChange={handleChange} required />
+                <label htmlFor="Motivo">Motivo de la Reserva:</label>
+                <textarea id="Motivo" name="Motivo" rows="3" value={formData.Motivo} onChange={handleChange} required />
               </div>
 
               <div className="modal-buttons">
